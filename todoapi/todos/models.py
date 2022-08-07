@@ -6,7 +6,5 @@ class Users(models.Model):
     first_name = models.CharField(max_length=64)
     last_name = models.CharField(max_length=64)
     birth_date = models.PositiveIntegerField()
-    email = models.EmailField(max_length=100)
-
-
+    email = models.EmailField(max_length=100, unique=True)
 
